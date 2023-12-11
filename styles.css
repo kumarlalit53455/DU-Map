@@ -1,0 +1,165 @@
+
+/* Style for the overall container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Style for the left content */
+.left {
+    padding: 20px;
+    width: 70%;
+    overflow-y: auto; /* Added scroll for long content */
+}
+
+/* Style for the right table of contents */
+.right {
+    padding: 20px;
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 20px;
+    right: 20px;
+    height: 90vh;
+    width: 30%;
+    overflow-y: auto; /* Added scroll for long content */
+    border-radius: 20px;
+}
+
+/* Style for the right-side table of contents */
+#right-box {
+    list-style-type: none;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+
+#right-box > li {
+    padding: 5px 0;
+}
+
+#right-box > li > a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style for the highlighted item in the right-side list */
+.right .active-link {
+    font-weight: bold;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Style for headings in the left content */
+.left h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style for description and lists in the left content */
+.left p, .left li {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style for strong text (e.g., benefits and limitations) */
+.left strong {
+    color: #007BFF;
+}
+
+/* Style for hyperlinks within the left content */
+.left a {
+    color: #007BFF;
+}
+
+
+/* //Header  */
+header {
+    /* width: 100vw; */
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    flex:1;
+}
+.logo img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+nav{
+    flex:2;
+}
+.explore{
+    flex:1;
+    text-align: right;
+    padding: 10px;
+}
+.explore a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: #e27777;
+}
+.explore a:hover{
+    color: #ee5a5a;
+    background: #fff;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* align-items: space-between; */
+    justify-content: center;
+    /* border: 2px solid rebeccapurple; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+}
+nav ul li:hover {
+    /* border: 2px solid rebeccapurple; */
+    background: #e27777;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    /* text-decoration: underline; */
+    /* border: 2px solid rebeccapurple; */
+}
+
+.college-map{
+    font-size: 120px;
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 40px;
+}
+.college-map:hover{
+    color: #fff;
+    background: #007BFF;
+    border-radius: 10px;
+    
+}
+.college-map-line{
+    color: #222426;
+    font-size: 50px;
+    text-decoration: none;
+}

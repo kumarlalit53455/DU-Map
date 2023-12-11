@@ -1,0 +1,754 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* ###################     html Element styling    #########################  */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* line-height: 1.7; */
+}   
+
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+    /* ################## Utility Classes  #################### */
+
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-grey{
+    color: #555;
+}
+.text-black{
+    color: #333;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0em;
+}
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.btn-secondary{
+    background-color: #fff;
+    border-radius: 2.5em;
+    color: #e63946;
+    border: 2px solid #e63946;
+}
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+}
+
+
+
+    /* ###################### Header styling   #################### */
+/* .header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.nav-bar{
+    padding: 1rem;
+}
+
+.nav-bar .logo{
+    float: left;
+}
+
+.nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.nav-bar .nav-items .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.nav-bar a:link,
+.nav-bar a:visited{
+    color: #f4f4f4;
+    font-size: 1.6rem;
+}
+.nav-bar a{
+    padding: 0.3rem;
+}
+.nav-bar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+/* Adding pseudo element to clear float 
+.nav-bar::after{
+    content: "";
+    clear: both;
+    display: block;
+} */
+
+    /* ###################### Header content styling   ##################### */
+
+/* .header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content P{
+    text-transform: uppercase;
+} */
+
+
+    /* #####################   showcase section styling    ################### */
+
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 35rem;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.418);
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+    background-color: #fff;
+    height: 100%;
+}
+
+    /* ########    img insert using background     ############ */
+/* .row1 .img-box{
+    background: url('../img/showcase-photo1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.row2 .img-box{
+    background: url('../img/showcase-photo2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+/* ########    img insertion using img element     ############ */
+.row .img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+    /* ################# Features section styling using flex ###########   */
+/* 
+.box-wrapper{
+    height: 25rem;
+    display: flex;
+    margin: 10rem 0;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.215);
+}
+.box{
+    text-align: center;
+    padding: 2rem;
+}
+
+.box-1{
+    background-color: #263238;
+    color: #fff;
+}
+.box-2{
+    background: linear-gradient(25deg, #d64c7f,#ee4758 50%);
+    color: #fff;
+}
+.box-3{
+    background-color: #263238;
+    color: #fff;
+} */
+
+ /* ################# Features section styling ###########   */
+
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    box-shadow: 5px 5px 10px rgb(102 102 102 / 52%);
+}
+
+.box{
+    width: 33.3333333%;
+    float: left;
+    padding: 2em;
+    text-align: center;
+}
+
+.box-1, .box-3{
+    background-color: #263238;
+    color: #fff;
+}
+
+.box-2{
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #fff;
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ############# footer styling ################# */
+
+.footer{
+    background-color: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align:center;
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+
+/* ######################      About page styling      ########################## */
+
+.about{
+    padding: 5rem 0;
+}
+.about .container h2::after{
+    content: "";
+    display: block;
+    height: 0.5rem;
+    background: #e63946;
+}
+
+/* ###############  About wrapper Styling  ################# */
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: 700;
+    padding-right: 1rem;
+}
+
+
+/* ################   Counts Div Styling   ################ */
+
+.counts{
+    margin-top: 3rem;
+}
+.count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.count-item span{
+    color: #e63946;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.count-item p{
+    color: #555;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ##############  Banner Styling  ################ */
+
+.cta-banner{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color:#f4f4f4;
+    margin-top: 3rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
+}
+.cta-banner-left{
+    float: left;
+    width: 60%;
+}
+
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.cta-banner-right{
+    float: right;
+    width: 40%;
+    text-align: right;  
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+
+}
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ##################  Contact page Styling    ############### */
+
+.contact-form{
+    background: #f7f7f7;
+    padding: 5rem 0;
+}
+
+.form-wrapper .company-address{
+    height: 760px;
+    background: #fff;
+    float: left;
+    width: 49%;
+    padding: 1rem;
+}
+
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ################     FORM STYLING  ####################### */
+
+.form-wrapper .form{
+    height: 760px;
+    font-size: 1.6rem;
+    background: #fff;
+    float: right;
+    width: 49%;
+    padding: 1rem;
+}
+
+.form h1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom:6px solid #ee4758;
+}
+
+.form-wrapper .form label{
+    display: block;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form .form-group label::after{
+    content: '* ';
+    color: #e63946;
+}
+
+.form-wrapper .form .form-group textarea{
+    width: 100%;
+    height: 30rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* #############   MEDIA QUERY     ##################### */
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    /* ##########      INDEX PAGE      ###### */
+    .nav-bar .logo, .nav-bar .nav-items{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .header-content .main-heading{
+        display: none;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .box-wrapper .box{
+        float: none;
+        width: 100%;
+        margin-bottom: 5rem;
+        border-radius: 2rem;
+        box-shadow: 5px 5px 10px rgb(102 102 102 / 52%);
+    }
+    /* ##########      ABOUT PAGE      ###### */
+    .about-wrapper .left, .about-wrapper .right{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .count-item{
+        width: 50%;
+    }
+    .cta-banner .cta-banner-left, .cta-banner .cta-banner-right{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* ##########      CONTACT PAGE      ###### */
+    .form-wrapper .company-address, .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+        box-shadow: 5px 5px 10px rgb(102 102 102 / 52%);
+    }
+}
+
+@media (min-width:501px)and (max-width:768px){
+    html{
+        font-size: 56.25%;
+    }
+    /* ##########      INDEX PAGE      ###### */
+    
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .box-wrapper .box{
+        float: none;
+        width: 100%;
+        margin-bottom: 5rem;
+        border-radius: 2rem;
+        box-shadow: 5px 5px 10px rgb(102 102 102 / 52%);
+    }
+
+    /* ##########      ABOUT PAGE      ###### */
+    .cta-banner .cta-banner-left, .cta-banner .cta-banner-right{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ##########      CONTACT PAGE      ###### */
+    .form-wrapper .company-address, .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+        box-shadow: 5px 5px 10px rgb(102 102 102 / 52%);
+    }
+}
+
+@media (min-width:769px)and (max-width:1200px){
+    html{
+        font-size: 56.25%;
+    }
+    
+    .row .text-box h2{
+        font-size: 2.2em;
+        font-weight: 500;
+    }
+    .row .text-box p{
+        font-size: 1.6em;
+    } 
+}
+
+@media(orientation:landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
+
+
+
+/* //Header  */
+header {
+    /* width: 100vw; */
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    flex:1;
+}
+.logo img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+nav{
+    flex:2;
+}
+.explore{
+    flex:1;
+    text-align: right;
+    padding: 10px;
+}
+.explore a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: #e27777;
+}
+.explore a:hover{
+    color: #ee5a5a;
+    background: #fff;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* align-items: space-between; */
+    justify-content: center;
+    /* border: 2px solid rebeccapurple; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+}
+nav ul li:hover {
+    /* border: 2px solid rebeccapurple; */
+    background: #e27777;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    /* text-decoration: underline; */
+    /* border: 2px solid rebeccapurple; */
+}
+
+.college-map{
+    font-size: 120px;
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 40px;
+}
+/* .college-map:hover{
+    color: #fff;
+    background: #007BFF;
+    border-radius: 10px;
+    
+} */
+.college-map-line{
+    color: #222426;
+    font-size: 50px;
+    text-decoration: none;
+}
+.explore-big{
+    padding: 30px;
+    /* width: 100px; */
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 40px;
+    /* border: 2px solid #007BFF; */
+    display: flex;
+    justify-content: center;
+}
+.content-explore-big{
+    /* border: 2px solid #007BFF; */
+    color: #FFF;
+    background: #007BFF;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.content-explore-big:hover{
+    /* border: 2px solid #007BFF; */
+    color: #FFF;
+    background: #007bff61;
+    padding: 10px 20px;
+    border-radius: 50px;
+}

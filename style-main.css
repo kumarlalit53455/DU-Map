@@ -1,0 +1,167 @@
+
+body{
+    background: url(./classroom.jpg);
+}
+/* Style for the overall container */
+.container {
+    display: flex;
+    /* background: url(./classroom.jpg); */
+    justify-content: space-between;
+    /* margin: 20px; */
+}
+
+/* Style for the left content */
+.left {
+    padding: 20px;
+
+    /* width: 70%; */
+    /* overflow-y: auto; Added scroll for long content */
+}
+
+/* Style for the right table of contents */
+
+/* Style for headings in the left content */
+.left h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style for description and lists in the left content */
+.left p, .left li {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style for strong text (e.g., benefits and limitations) */
+.left strong {
+    color: #007BFF;
+}
+
+/* Style for hyperlinks within the left content */
+.left a {
+    color: #007BFF;
+}
+
+
+/* //Header  */
+header {
+    /* width: 100vw; */
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    flex:1;
+}
+.logo img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+nav{
+    flex:2;
+}
+.explore{
+    flex:1;
+    text-align: right;
+    padding: 10px;
+}
+.explore a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: #e27777;
+}
+.explore a:hover{
+    color: #ee5a5a;
+    background: #fff;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* align-items: space-between; */
+    justify-content: center;
+    /* border: 2px solid rebeccapurple; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 2.4px;
+}
+nav ul li:hover {
+    /* border: 2px solid rebeccapurple; */
+    background: #e27777;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    /* text-decoration: underline; */
+    /* border: 2px solid rebeccapurple; */
+}
+
+.college-map{
+    font-size: 120px;
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 40px;
+}
+/* .college-map:hover{
+    color: #fff;
+    background: #007BFF;
+    border-radius: 10px;
+    
+} */
+.college-map-line{
+    color: #222426;
+    font-size: 50px;
+    text-decoration: none;
+}
+.explore-big{
+    padding: 30px;
+    /* width: 100px; */
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 40px;
+    /* border: 2px solid #007BFF; */
+    display: flex;
+    justify-content: center;
+}
+.content-explore-big{
+    /* border: 2px solid #007BFF; */
+    color: #FFF;
+    background: #007BFF;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.content-explore-big:hover{
+    /* border: 2px solid #007BFF; */
+    color: #FFF;
+    background: #007bff61;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.content-explore-big a{
+    color: #FFF;
+    text-decoration: none;
+}
